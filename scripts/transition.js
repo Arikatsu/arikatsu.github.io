@@ -1,5 +1,5 @@
 const bgmusic = document.createElement('audio')
-bgmusic.src = 'assets/bgmusic.mp3'
+bgmusic.src = '../assets/bgmusic.mp3'
 bgmusic.loop = true
 bgmusic.autoplay = true
 
