@@ -17,25 +17,25 @@ body {
 
 @keyframes buzz {
     50% {
-        -webkit-transform: translate(-50%, -50%) rotate(2deg);
+        -webkit-transform: translate(-50%, -50%) rotate(2deg) skewX(-10deg);
         transform: translate(-50%, -50%) rotate(2deg);
     }
 
     100% {
-        -webkit-transform: translate(-50%, -50%) rotate(-2deg);
-        transform: translate(-50%, -50%) rotate(-2deg);
+        -webkit-transform: translate(-50%, -50%) rotate(-2deg) skewX(-10deg);
+        transform: translate(-50%, -50%) rotate(-2deg) skewX(-10deg);
     }
 }
 
 @-webkit-keyframes buzz {
     50% {
-        -webkit-transform: translate(-50%, -50%) rotate(2deg);
-        transform: translate(-50%, -50%) rotate(2deg);
+        -webkit-transform: translate(-50%, -50%) rotate(2deg) skewX(-10deg);
+        transform: translate(-50%, -50%) rotate(2deg) skewX(-10deg);
     }
 
     100% {
-        -webkit-transform: translate(-50%, -50%) rotate(-2deg);
-        transform: translate(-50%, -50%) rotate(-2deg);
+        -webkit-transform: translate(-50%, -50%) rotate(-2deg) skewX(-10deg);
+        transform: translate(-50%, -50%) rotate(-2deg) skewX(-10deg);
     }
 }
 
@@ -46,13 +46,12 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) skewX(-10deg);
     z-index: 9;
     padding: 15px 30px;
     white-space: nowrap;
     font-size: 27px;
     border: 1px solid slategray;
-    border-radius: 40px;
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -67,13 +66,13 @@ body {
     animation-iteration-count: infinite;
 }
 
-.tempbg-container img {
+.tempbg-container video {
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     filter: brightness(50%);
@@ -110,7 +109,7 @@ body {
     transform: translate(-50%, -50%);
     padding: 30px;
     padding-bottom: 2;
-    padding-top: 120px;
+    padding-top: 130px;
     width: 20%;
     font-size: x-large;
     min-width: 300px;
