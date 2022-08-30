@@ -100,10 +100,6 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.content.container {
-    position: relative;
-}
-
 .content-wrapper {
     position: fixed;
     overflow: hidden;
@@ -112,23 +108,29 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: whitesmoke;
     padding: 30px;
     padding-bottom: 2;
-    padding-top: 60px;
-    border-radius: 25px;
+    padding-top: 120px;
     width: 20%;
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
     font-size: x-large;
-    border: 6px solid lightslategrey;
     min-width: 300px;
+}
+
+#content-text {
+    padding-top: 50px;
+    overflow: hidden;
+    background-color: whitesmoke;
+    padding: 30px;
+    border: 6px solid lightslategrey;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
 }
 
 .pfp-container img {
     position: fixed;
     width: 9%;
-    top: 16%;
     left: 50%;
+    margin-top: -10%;
     transform: translate(-50%, -50%);
     height: auto;
     overflow: hidden;
@@ -136,10 +138,4 @@ body {
     border-radius: 50%;
     border: 6px solid lightslategrey;
     min-width: 150px;
-}
-
-#status {
-    padding-top: 25px;
-    z-index: 5;
-    width: 100%;
 }
