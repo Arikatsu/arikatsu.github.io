@@ -39,6 +39,18 @@ body {
     }
 }
 
+@-webkit-keyframes bounce {
+    to { -webkit-transform: translate(-50%, -50%) skewX(-10deg); }
+}
+  
+@-moz-keyframes bounce {
+    to { -moz-transform: translate(-50%, -50%) skewX(-10deg); }
+}
+  
+@keyframes bounce {
+    to { transform: translate(-50%, -30%) skewX(10deg); }
+}
+
 #no-reason {
     font-family: monospace;
     color: white;
@@ -53,6 +65,9 @@ body {
     font-size: 27px;
     border: 1px solid slategray;
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    -webkit-animation: bounce .3s infinite alternate;
+    -moz-animation: bounce .3s infinite alternate;
+    animation: bounce .3s infinite alternate;
 }
 
 #no-reason:hover, #no-reason:focus, #no-reason:active {
@@ -66,7 +81,7 @@ body {
     animation-iteration-count: infinite;
 }
 
-.tempbg-container video {
+.tempbg-container img {
     min-width: 100%;
     min-height: 100%;
     width: 100vh;
