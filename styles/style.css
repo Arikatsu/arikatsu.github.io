@@ -40,21 +40,27 @@ body {
 }
 
 @-webkit-keyframes bounce {
-    to { -webkit-transform: translate(-50%, -50%) skewX(-10deg); }
+    to {
+        -webkit-transform: translate(-50%, -50%) skewX(-10deg);
+    }
 }
-  
+
 @-moz-keyframes bounce {
-    to { -moz-transform: translate(-50%, -50%) skewX(-10deg); }
+    to {
+        -moz-transform: translate(-50%, -50%) skewX(-10deg);
+    }
 }
-  
+
 @keyframes bounce {
-    to { transform: translate(-50%, -30%) skewX(10deg); }
+    to {
+        transform: translate(-50%, -30%) skewX(10deg);
+    }
 }
 
 #no-reason {
     font-family: monospace;
     color: white;
-    background: linear-gradient(to bottom,lightslategrey, grey);
+    background: linear-gradient(to bottom, lightslategrey, grey);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -70,7 +76,9 @@ body {
     animation: bounce .3s infinite alternate;
 }
 
-#no-reason:hover, #no-reason:focus, #no-reason:active {
+#no-reason:hover,
+#no-reason:focus,
+#no-reason:active {
     cursor: pointer;
     background: linear-gradient(to bottom, grey, lightslategrey);
     -webkit-animation-name: buzz;
@@ -193,6 +201,24 @@ ul {
     transition: ease-in-out 0.2s;
 }
 
+.menu .menu-text {
+    display: none;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    background-color: #fff;
+    padding: .5em;
+    min-width: 10rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #222;
+    
+}
+
 .menu img:hover {
     transform: scale(1.1);
+}
+
+.menu:hover .menu-text {
+    display: block;
 }
