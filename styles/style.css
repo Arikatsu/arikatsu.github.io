@@ -69,13 +69,14 @@ body {
 .tempbg-container video {
     min-width: 100%;
     min-height: 100%;
-    width: auto;
+    width: 100vh;
     height: auto;
+    object-fit: cover;
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    filter: brightness(50%);
+    filter: brightness(80%);
     overflow: hidden;
 }
 

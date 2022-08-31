@@ -7,11 +7,15 @@ document.body.appendChild(bgmusic)
 
 const button = document.getElementById('no-reason')
 const tempbg = document.getElementsByClassName('tempbg-container')[0]
+const bgvideo = document.getElementById('bgvideo')
+bgvideo.pause()
+
 
 button.addEventListener('click', () => {
     fade(tempbg, 1000)
     fade(button, 1000)
     bgmusic.play()
+    bgvideo.play()
 })
 
 function fade(element, duration) {
