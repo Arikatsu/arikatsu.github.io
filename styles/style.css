@@ -211,8 +211,7 @@ ul {
     padding: .5em;
     min-width: 10rem;
     border-radius: 5px;
-    box-shadow: 5px 5px 5px #222;
-    
+    box-shadow: 5px 5px 5px #222;  
 }
 
 .menu img:hover {
