@@ -5,14 +5,34 @@ body {
     font-family: monospace;
 }
 
+#loader {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0;
+}
+
 .tempbg-container {
     position: absolute;
     top: 0;
-    left: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
     z-index: 8;
+}
+
+.tempbg-container video {
+    min-width: 10%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: brightness(50%);
+    overflow: hidden;
 }
 
 @keyframes buzz {
@@ -64,19 +84,6 @@ body {
     animation-duration: 0.15s;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-}
-
-.tempbg-container video {
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    filter: brightness(50%);
-    overflow: hidden;
 }
 
 .video-container {
@@ -177,6 +184,6 @@ ul {
     transition: ease-in-out 0.2s;
 }
 
-.menu img:hover {
+.menu img:hover, .menu img:focus, .menu img:active {
     transform: scale(1.1);
 }
