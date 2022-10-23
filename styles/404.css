@@ -31,7 +31,6 @@ body {
 #heading {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: absolute;
-    /* nowrap text */
     white-space: nowrap;
     top: 15%;
     left: 50%;
